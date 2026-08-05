@@ -6,7 +6,7 @@ import Skills from "./components/Skills/Skills";
 import Education from "./components/Education/Education";
 import Statistics from "./components/Statistics/Statistics";
 import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/footer";
 
 function App() {
   return (
