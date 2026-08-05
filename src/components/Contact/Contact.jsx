@@ -1,6 +1,5 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 import {
   FaEnvelope,
@@ -34,10 +33,10 @@ function Contact() {
 
     try {
       await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        "service_portfolio",
+        "template_portfolio",
         form,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        "MgU6fewkyV_fPvfdO"
       );
 
       alert("Message sent successfully!");
@@ -61,17 +60,21 @@ function Contact() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-12 md:mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold">Let's Connect</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">
+            Let's Connect
+          </h2>
 
           <p className="mt-4 text-slate-300 max-w-2xl mx-auto">
-            Have a project, graduate opportunity, or collaboration in mind? Feel
-            free to send me a message.
+            Have a project, graduate opportunity, or collaboration in mind?
+            Feel free to send me a message.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
           {/* Contact Information */}
           <div className="space-y-8 text-center lg:text-left">
+
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <FaEnvelope className="text-3xl text-blue-400" />
 
@@ -131,7 +134,9 @@ function Contact() {
             className="bg-white rounded-2xl p-6 md:p-8 text-slate-900 shadow-xl"
           >
             <div className="mb-5">
-              <label className="block mb-2 font-semibold">Full Name</label>
+              <label className="block mb-2 font-semibold">
+                Full Name
+              </label>
 
               <input
                 type="text"
@@ -144,7 +149,9 @@ function Contact() {
             </div>
 
             <div className="mb-5">
-              <label className="block mb-2 font-semibold">Email</label>
+              <label className="block mb-2 font-semibold">
+                Email
+              </label>
 
               <input
                 type="email"
@@ -157,7 +164,9 @@ function Contact() {
             </div>
 
             <div className="mb-5">
-              <label className="block mb-2 font-semibold">Subject</label>
+              <label className="block mb-2 font-semibold">
+                Subject
+              </label>
 
               <input
                 type="text"
@@ -170,7 +179,9 @@ function Contact() {
             </div>
 
             <div className="mb-6">
-              <label className="block mb-2 font-semibold">Message</label>
+              <label className="block mb-2 font-semibold">
+                Message
+              </label>
 
               <textarea
                 rows="5"
@@ -190,6 +201,7 @@ function Contact() {
               {sending ? "Sending..." : "Send Message"}
             </button>
           </form>
+
         </div>
       </div>
     </section>
