@@ -81,7 +81,13 @@ function Contact() {
                 <h3 className="font-semibold text-lg">Email</h3>
 
                 <p className="text-[#D6C7BD] break-all">
-                  bonololekalakala16@gmail.com
+                  <a
+                    href="mailto:bonololekalakala16@gmail.com"
+                    aria-label="Email"
+                    className="text-2xl hover:text-[#C79A6B] transition duration-300"
+                  >
+                    Click to email
+                  </a>
                 </p>
               </div>
             </div>
