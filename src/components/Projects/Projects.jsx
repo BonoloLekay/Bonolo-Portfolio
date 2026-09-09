@@ -3,14 +3,6 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 function Projects() {
   const projects = [
     {
-      title: "Bank Management System",
-      description:
-        "A full-stack banking application featuring secure authentication, customer management, account management, loan processing, and MySQL database integration.",
-      tech: ["Python", "Flask", "MySQL", "Bootstrap", "HTML", "CSS"],
-      github: "#",
-      demo: "#",
-    },
-    {
       title: "BML Tech Solutions Website",
       description:
         "A professional and fully responsive business website developed to showcase BML Tech's technology services and provide an easy way for potential clients to request software solutions. The platform features an enquiry form with service and budget selection, direct WhatsApp communication, email enquiry submission with client confirmation, and a clean user experience designed to convert visitors into clients.",
@@ -26,15 +18,8 @@ function Projects() {
       demo: "https://techbml.netlify.app/",
     },
     {
-      title: "Student Management System",
-      description:
-        "A desktop application developed using C++ and Qt for managing student records through an intuitive graphical user interface.",
-      tech: ["C++", "Qt"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "Resort Booking Management System (Business Analysis)",
+      title:
+        "Resort Booking Management System (Business Analysis + Live client website)",
       description:
         "Conducted the complete business analysis for a resort booking system, including stakeholder analysis, business requirements gathering, SRS documentation, use cases, process modelling and wireframes.",
       tech: [
@@ -47,7 +32,7 @@ function Projects() {
       ],
       github:
         "https://github.com/BonoloLekay/Oluhle-resort-booking-management-system",
-      demo: "#",
+      demo: "https://oluhleresorts.co.za",
     },
   ];
 

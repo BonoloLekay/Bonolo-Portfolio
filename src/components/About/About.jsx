@@ -25,15 +25,15 @@ function About() {
           </h2>
 
           <p className="mt-6 text-base md:text-lg text-slate-600 leading-8">
-            I am a BSc Informatics Graduate passionate about software
+            I am a BSc Informatics final year passionate about software
             development, business analysis, and data analysis. I enjoy building
             modern web and desktop applications that solve real business
             challenges using clean, scalable, and user-focused solutions.
           </p>
 
           <p className="mt-5 text-base md:text-lg text-slate-600 leading-8">
-            My experience includes developing banking systems, resort booking
-            management platforms, desktop applications with Qt, and responsive
+            My experience includes developing booking websites
+            , desktop applications with Qt, and responsive
             React applications. I enjoy learning new technologies and
             continuously improving my technical and analytical skills.
           </p>

@@ -34,7 +34,7 @@ function Education() {
               </p>
 
               <p className="mt-1 text-slate-500 font-medium">
-                BSc Informatics Graduate
+                BSc Informatics Final year student
               </p>
 
               <p className="mt-6 text-base md:text-lg text-slate-600 leading-8">

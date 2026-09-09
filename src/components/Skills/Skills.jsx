@@ -12,11 +12,16 @@ import {
 import {
   SiJavascript,
   SiMysql,
+  SiPostgresql,
   SiExpress,
   SiCplusplus,
   SiQt,
   SiTailwindcss,
+  SiPandas,
+  SiAnaconda,
 } from "react-icons/si";
+
+import { VscVscode } from "react-icons/vsc";
 
 function Skills() {
   const categories = [
@@ -37,10 +42,14 @@ function Skills() {
         },
       ],
     },
+
     {
       title: "Frontend Development",
       skills: [
-        { name: "React", icon: <FaReact className="text-sky-500 text-4xl" /> },
+        {
+          name: "React",
+          icon: <FaReact className="text-sky-500 text-4xl" />,
+        },
         {
           name: "HTML5",
           icon: <FaHtml5 className="text-orange-500 text-4xl" />,
@@ -59,6 +68,7 @@ function Skills() {
         },
       ],
     },
+
     {
       title: "Backend Development",
       skills: [
@@ -76,6 +86,7 @@ function Skills() {
         },
       ],
     },
+
     {
       title: "Databases",
       skills: [
@@ -84,38 +95,28 @@ function Skills() {
           icon: <SiMysql className="text-blue-700 text-4xl" />,
         },
         {
-          name: "Database Design",
-          icon: <SiMysql className="text-blue-500 text-4xl" />,
+          name: "PostgreSQL",
+          icon: <SiPostgresql className="text-blue-600 text-4xl" />,
         },
       ],
     },
+
     {
       title: "Business & Data Analysis",
       skills: [
-        {
-          name: "Business Analysis",
-          icon: <span className="text-4xl">📋</span>,
-        },
-        {
-          name: "Data Analysis",
-          icon: <span className="text-4xl">📈</span>,
-        },
         {
           name: "Power BI",
           icon: <span className="text-4xl">📊</span>,
         },
         {
           name: "Pandas",
-          icon: <span className="text-4xl">🐼</span>,
+          icon: <SiPandas className="text-purple-700 text-4xl" />,
         },
         {
           name: "Microsoft Excel",
           icon: <span className="text-4xl">📗</span>,
         },
-        {
-          name: "SQL",
-          icon: <SiMysql className="text-blue-700 text-4xl" />,
-        },
+
         {
           name: "Requirements Gathering",
           icon: <span className="text-4xl">📝</span>,
@@ -134,6 +135,7 @@ function Skills() {
         },
       ],
     },
+
     {
       title: "Tools & Technologies",
       skills: [
@@ -146,12 +148,16 @@ function Skills() {
           icon: <FaGithub className="text-black text-4xl" />,
         },
         {
-          name: "Qt",
-          icon: <SiQt className="text-green-500 text-4xl" />,
+          name: "VS Code",
+          icon: <VscVscode className="text-blue-500 text-4xl" />,
         },
         {
-          name: "VS Code",
-          icon: <span className="text-4xl">💻</span>,
+          name: "Anaconda",
+          icon: <SiAnaconda className="text-green-600 text-4xl" />,
+        },
+        {
+          name: "Qt",
+          icon: <SiQt className="text-green-500 text-4xl" />,
         },
         {
           name: "Qt Creator",
@@ -164,7 +170,6 @@ function Skills() {
   return (
     <section id="skills" className="py-16 md:py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
             Technical Skills
