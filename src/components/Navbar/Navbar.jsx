@@ -5,64 +5,79 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md border-b border-gray-200 z-50">
+    <header className="fixed top-0 left-0 w-full bg-[#FAF7F2]/95 backdrop-blur-md border-b border-[#E8DED6] z-50">
       <nav className="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
-        {/* Logo */}
-        <a href="#home" className="text-2xl md:text-3xl font-extrabold">
-          <span className="text-slate-900">BML.dev</span>
+        <a
+          href="#home"
+          className="text-2xl md:text-3xl font-extrabold text-[#2D211C]"
+        >
+          BML<span className="text-[#A66A3F]">.dev</span>
         </a>
 
-        {/* Desktop Navigation */}
-        <ul className="hidden md:flex items-center gap-8 text-slate-700 font-medium">
+        <ul className="hidden md:flex items-center gap-8 text-[#4A3A32] font-medium">
           <li>
-            <a href="#home" className="hover:text-blue-600 transition">
+            <a
+              href="#home"
+              className="hover:text-[#A66A3F] transition duration-300"
+            >
               Home
             </a>
           </li>
 
           <li>
-            <a href="#about" className="hover:text-blue-600 transition">
+            <a
+              href="#about"
+              className="hover:text-[#A66A3F] transition duration-300"
+            >
               About
             </a>
           </li>
 
           <li>
-            <a href="#skills" className="hover:text-blue-600 transition">
+            <a
+              href="#skills"
+              className="hover:text-[#A66A3F] transition duration-300"
+            >
               Skills
             </a>
           </li>
 
           <li>
-            <a href="#projects" className="hover:text-blue-600 transition">
+            <a
+              href="#projects"
+              className="hover:text-[#A66A3F] transition duration-300"
+            >
               Projects
             </a>
           </li>
 
           <li>
-            <a href="#contact" className="hover:text-blue-600 transition">
+            <a
+              href="#contact"
+              className="hover:text-[#A66A3F] transition duration-300"
+            >
               Contact
             </a>
           </li>
         </ul>
 
-        {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-2xl text-slate-800"
+          className="md:hidden text-2xl text-[#5C3A2E] hover:text-[#A66A3F] transition duration-300"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle navigation menu"
         >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </nav>
 
-      {/* Mobile Navigation */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
-          <ul className="flex flex-col items-center py-6 space-y-6 text-lg font-medium">
+        <div className="md:hidden bg-[#FAF7F2] border-t border-[#E8DED6] shadow-lg">
+          <ul className="flex flex-col items-center py-6 space-y-6 text-lg font-medium text-[#4A3A32]">
             <li>
               <a
                 href="#home"
                 onClick={() => setMenuOpen(false)}
-                className="hover:text-blue-600"
+                className="hover:text-[#A66A3F] transition duration-300"
               >
                 Home
               </a>
@@ -72,7 +87,7 @@ function Navbar() {
               <a
                 href="#about"
                 onClick={() => setMenuOpen(false)}
-                className="hover:text-blue-600"
+                className="hover:text-[#A66A3F] transition duration-300"
               >
                 About
               </a>
@@ -82,7 +97,7 @@ function Navbar() {
               <a
                 href="#skills"
                 onClick={() => setMenuOpen(false)}
-                className="hover:text-blue-600"
+                className="hover:text-[#A66A3F] transition duration-300"
               >
                 Skills
               </a>
@@ -92,7 +107,7 @@ function Navbar() {
               <a
                 href="#projects"
                 onClick={() => setMenuOpen(false)}
-                className="hover:text-blue-600"
+                className="hover:text-[#A66A3F] transition duration-300"
               >
                 Projects
               </a>
@@ -102,7 +117,7 @@ function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setMenuOpen(false)}
-                className="hover:text-blue-600"
+                className="hover:text-[#A66A3F] transition duration-300"
               >
                 Contact
               </a>

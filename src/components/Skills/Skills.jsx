@@ -78,11 +78,11 @@ function Skills() {
         },
         {
           name: "Express.js",
-          icon: <SiExpress className="text-black text-4xl" />,
+          icon: <SiExpress className="text-[#2D211C] text-4xl" />,
         },
         {
           name: "Flask",
-          icon: <FaPython className="text-gray-700 text-4xl" />,
+          icon: <FaPython className="text-[#4A3A32] text-4xl" />,
         },
       ],
     },
@@ -116,7 +116,6 @@ function Skills() {
           name: "Microsoft Excel",
           icon: <span className="text-4xl">📗</span>,
         },
-
         {
           name: "Requirements Gathering",
           icon: <span className="text-4xl">📝</span>,
@@ -145,7 +144,7 @@ function Skills() {
         },
         {
           name: "GitHub",
-          icon: <FaGithub className="text-black text-4xl" />,
+          icon: <FaGithub className="text-[#2D211C] text-4xl" />,
         },
         {
           name: "VS Code",
@@ -168,14 +167,18 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-16 md:py-20 bg-slate-50">
+    <section id="skills" className="py-16 md:py-20 bg-[#FAF7F2]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
+          <p className="text-[#A66A3F] font-semibold uppercase tracking-[4px] mb-3">
+            My Expertise
+          </p>
+
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2D211C]">
             Technical Skills
           </h2>
 
-          <p className="mt-4 text-base md:text-lg text-slate-600">
+          <p className="mt-4 text-base md:text-lg text-[#6B5A50]">
             Software Development • Business Analysis • Data Analysis
           </p>
         </div>
@@ -183,7 +186,7 @@ function Skills() {
         <div className="space-y-12">
           {categories.map((category) => (
             <div key={category.title}>
-              <h3 className="text-xl md:text-2xl font-semibold text-blue-600 mb-6 text-center md:text-left">
+              <h3 className="text-xl md:text-2xl font-semibold text-[#5C3A2E] mb-6 text-center md:text-left">
                 {category.title}
               </h3>
 
@@ -191,11 +194,26 @@ function Skills() {
                 {category.skills.map((skill) => (
                   <div
                     key={skill.name}
-                    className="bg-white rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center"
+                    className="
+                      bg-white
+                      border border-[#E8DED6]
+                      rounded-2xl
+                      p-5
+                      shadow-md
+                      hover:shadow-xl
+                      hover:-translate-y-2
+                      hover:border-[#A66A3F]
+                      transition-all
+                      duration-300
+                      flex
+                      flex-col
+                      items-center
+                      justify-center
+                    "
                   >
                     {skill.icon}
 
-                    <p className="mt-3 text-sm md:text-base font-medium text-center text-slate-700">
+                    <p className="mt-3 text-sm md:text-base font-medium text-center text-[#4A3A32]">
                       {skill.name}
                     </p>
                   </div>

@@ -8,33 +8,32 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-slate-950 text-white">
+    <footer className="bg-[#2D211C] text-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        {/* Main Footer */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Brand */}
           <div className="text-center md:text-left">
-            <h2 className="text-3xl font-bold text-blue-400">
+            <h2 className="text-3xl font-bold text-[#C79A6B]">
               Bonolo Lekalakala
             </h2>
 
-            <p className="mt-4 text-slate-400 leading-7">
-              Final-year BSc Informatics Student passionate about Software
+            <p className="mt-4 text-[#D6C7BD] leading-7">
+              Final-year BSc Informatics student passionate about Software
               Development, Business Analysis, and Data Analysis. I enjoy
               designing and developing modern software solutions that solve
               real-world business problems.
             </p>
           </div>
 
-          {/* Quick Links */}
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-semibold mb-5">Quick Links</h3>
+            <h3 className="text-xl font-semibold mb-5 text-white">
+              Quick Links
+            </h3>
 
-            <ul className="space-y-3 text-slate-400">
+            <ul className="space-y-3 text-[#D6C7BD]">
               <li>
                 <a
                   href="#home"
-                  className="hover:text-blue-400 transition duration-300"
+                  className="hover:text-[#C79A6B] transition duration-300"
                 >
                   Home
                 </a>
@@ -43,7 +42,7 @@ function Footer() {
               <li>
                 <a
                   href="#about"
-                  className="hover:text-blue-400 transition duration-300"
+                  className="hover:text-[#C79A6B] transition duration-300"
                 >
                   About
                 </a>
@@ -52,7 +51,7 @@ function Footer() {
               <li>
                 <a
                   href="#skills"
-                  className="hover:text-blue-400 transition duration-300"
+                  className="hover:text-[#C79A6B] transition duration-300"
                 >
                   Skills
                 </a>
@@ -61,7 +60,7 @@ function Footer() {
               <li>
                 <a
                   href="#projects"
-                  className="hover:text-blue-400 transition duration-300"
+                  className="hover:text-[#C79A6B] transition duration-300"
                 >
                   Projects
                 </a>
@@ -70,7 +69,7 @@ function Footer() {
               <li>
                 <a
                   href="#education"
-                  className="hover:text-blue-400 transition duration-300"
+                  className="hover:text-[#C79A6B] transition duration-300"
                 >
                   Education
                 </a>
@@ -79,7 +78,7 @@ function Footer() {
               <li>
                 <a
                   href="#contact"
-                  className="hover:text-blue-400 transition duration-300"
+                  className="hover:text-[#C79A6B] transition duration-300"
                 >
                   Contact
                 </a>
@@ -87,11 +86,12 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Connect */}
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-semibold mb-5">Connect With Me</h3>
+            <h3 className="text-xl font-semibold mb-5 text-white">
+              Connect With Me
+            </h3>
 
-            <p className="text-slate-400 mb-6">
+            <p className="text-[#D6C7BD] mb-6">
               Feel free to connect with me through any of the platforms below.
             </p>
 
@@ -101,7 +101,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="text-2xl hover:text-blue-400 transition duration-300"
+                className="text-2xl hover:text-[#C79A6B] transition duration-300"
               >
                 <FaGithub />
               </a>
@@ -111,7 +111,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="text-2xl hover:text-blue-400 transition duration-300"
+                className="text-2xl hover:text-[#C79A6B] transition duration-300"
               >
                 <FaLinkedin />
               </a>
@@ -119,7 +119,7 @@ function Footer() {
               <a
                 href="mailto:bonololekalakala16@gmail.com"
                 aria-label="Email"
-                className="text-2xl hover:text-blue-400 transition duration-300"
+                className="text-2xl hover:text-[#C79A6B] transition duration-300"
               >
                 <FaEnvelope />
               </a>
@@ -137,16 +137,15 @@ function Footer() {
           </div>
         </div>
 
-        {/* Bottom Footer */}
-        <div className="border-t border-slate-800 mt-14 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-slate-500 text-center text-sm">
+        <div className="border-t border-[#5C3A2E] mt-14 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-[#B9A99E] text-center text-sm">
             © {new Date().getFullYear()} Bonolo Lekalakala. All Rights Reserved.
           </p>
 
           <a
             href="#home"
             aria-label="Back to top"
-            className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition duration-300 hover:scale-110"
+            className="bg-[#5C3A2E] hover:bg-[#7A4F3A] p-3 rounded-full transition duration-300 hover:scale-110"
           >
             <FaArrowUp />
           </a>
